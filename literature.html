@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Page Title</title>
+ <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <meta charset="UTF-8">
+ <style>
+
+   
+   .card {   
+        display:inline-block;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+		width:20%
+	}
+
+	.card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+
+	.picture{
+		max-width: 160px; 
+	    max-height: 210px;
+		border: 3px solid #d6d6c2;
+		width:100%
+	}
+   [class*='col-'] {
+     display:inline-block;
+	 box-sizing: border-box;
+     padding: 0 0.5em;
+     width: 100%;
+     margin-bottom:0.5em;
+	 margin-left:0.5em;
+   } 
+
+     .row+.row {	
+       margin-top: 0.5em;
+     }
+	 .row{
+	  display:flex;
+	  justify-content: center;
+	 }
+	 
+     .col-1-12 {
+       width: 6.5%;
+       margin-right:1%;
+     }
+	 .col-6-12 {
+	   background-color:white;
+       width: 49%;
+	   border: 2px solid black;
+     }
+     [class*='col-']:last-of-type {
+       margin-right:0;
+     }
+   .inline{
+    display:inline-block;
+	}
+   .holder{
+     color: #444;	
+     font-family: "Lato";
+     background-color: #C4C4B2;
+	 text-align: center;
+	 margin-left:2%;
+	 margin-bottom:1%;
+	 display: inline-block;
+	 width: 79%;
+	 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+	}
+	.aboutme{
+	 padding-left:5%;
+	 font-family: "Lato";
+	 font-size: 16px;
+	}
+	.header{
+	 margin-top: 1%;
+	 display:flex;
+	}
+	.minibox{
+	 margin:1%;
+	 display: inline-block;
+	 width:47.5%;
+	}
+	.boxforminibox{
+	 display:flex;
+	}
+	.subjectname{
+	 color: #444;
+	 font-family: "Lato";
+	 margin:1%;
+	 margin-top:5%;
+	}
+	.subjectname2{
+	 color: #444;
+	 font-family: "Lato";
+	 margin:1%;
+	 padding-left:15%;
+	 padding-right:15%;
+	 border-bottom: 1px solid black;
+	}
+	.subjectname3{
+	 color: #444;
+	 font-family: "Lato";
+	 margin:1%;
+	 padding-left:15%;
+	 padding-right:15%;
+	}
+	
+	.subjectdesc{
+	 margin-left:3%;
+	 
+	}
+	ol.a{
+	 list-style-type: upper-roman;
+	 font-family: "Lato";
+	 font-size: 14px;
+	}
+	.smalltitletitle{
+	 margin-left:4%;
+	}
+	
+	.borderek1{
+	 border: 4px solid #d6d6c2;
+	}
+	
+	.borderek2{
+	 border: 4px solid #444;
+	}
+	
+	ul.a {
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+	 overflow: hidden;
+	 background-color: #B2B2A3;
+	}
+	
+	li a {
+	 float: left;
+	 display: block;
+	 color: white;
+	 text-align: center;
+	 padding: 14px 16px;
+	 text-decoration: none;
+	}
+	
+	.dropbtn {
+	 display: block;
+	 color: #444;
+	 text-align: center;
+	 padding: 14px 16px;
+	 text-decoration: none;
+	}
+	
+	li a:hover:not(.active), .dropdown:hover{
+     color: white;
+	 background-color: #444;
+	}
+	
+	.active {
+	 float: right;
+	 background-color: #444;
+	}
+	
+	.dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #ccccb3;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+	 transition: display 2s;
+	}
+	
+	.dropdown-content2 {
+     display: none;
+     position: absolute;
+     background-color: #ccccb3;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+	}
+	
+	.dropdown-contents {
+	 float: none; 
+	 display: block;
+     color: #444;
+     padding: 12px 16px;
+     text-decoration: none;
+     text-align: left;
+	}
+	
+
+	.dropdown-content a:hover {background-color: #444}
+
+	.dropdown:hover .dropdown-content {
+	 margin-top: 40px;
+     display: block;
+	}
+	.dropdown:hover .dropdown-content2 {
+	 margin-left: 95px;
+	 margin-top: 40px;
+     display: block;
+	}
+	.navbar {
+	}
+	.center{
+		text-align: center;
+	}
+	
+	.book{
+	
+	}
+	
+	.books{
+	 padding: 2%;
+	}
+	
+	.currentbook{
+		text-align: justify;
+		font-family: "Lato";
+		padding: 1%;
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	
+	.bookcover{
+		float: left; 
+		margin-right: 3%;
+	}
+	
+	.show{
+		display: block;
+	}
+	.hide{
+		display: none;
+	}
+	
+	.booksdescript1{
+		font-family: "Lato";
+		background-color: #444;
+		color: white;
+		margin-left: 2%;
+		margin-right: 15%;
+		margin-bottom: 5%;
+		padding-top:2%;
+		padding-bottom:2%;
+		padding-left:5%;
+		padding-right:5%;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		display:block;
+	}
+	
+	.booksdescript2{
+		display: block;
+		font-family: "Lato";
+		background-color: #4D4D4D;
+		color: white;
+		margin-left: 2%;
+		margin-right: 15%;
+		margin-bottom: 5%;
+		padding-top:2%;
+		padding-bottom:2%;
+		padding-left:5%;
+		padding-right:5%;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		
+	}
+	
+	.booksdescript3{
+		display: block;
+		font-family: "Lato";
+		background-color: #606060;
+		color: white;
+		margin-left: 2%;
+		margin-right: 15%;
+		margin-bottom: 5%;
+		padding-top:2%;
+		padding-bottom:2%;
+		padding-left:5%;
+		padding-right:5%;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		
+	}
+	
+	.booksdescript4{
+		display: block;
+		font-family: "Lato";
+		background-color: #737373;
+		color: white;
+		margin-left: 2%;
+		margin-right: 15%;
+		margin-bottom: 5%;
+		padding-top:2%;
+		padding-bottom:2%;
+		padding-left:5%;
+		padding-right:5%;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		
+	}
+	
+	.justify {
+		text-align: justify;
+	}
+	
+
+	
+	@media screen and (max-width: 1100px) {
+		li a{	
+			float:none;
+		}
+		.active{
+			float:none;
+		}
+		.holder{
+			width: 100%;
+			margin-right: 10px;
+		}
+		.card{
+			display:none;
+		}
+		.picture{
+			display: none;
+		}
+		.minibox{
+			display:block;
+			width:100%;
+			margin-right: 50px;
+		}
+		.boxforminibox {
+			margin-right: 10px;
+			display: block; 
+		}
+		.dropdown-content {
+			margin-top: 0px;
+			position: relative;
+		}
+		.dropdown-content2 {
+			margin-top: 0px;
+			margin-left: 0px;
+			position: relative;
+		}
+		.dropdown-contents{
+			text-align: center;
+		}
+		.dropdown:hover .dropdown-content {
+			margin-top: 0px;
+			display: block;
+		}
+		.dropdown:hover .dropdown-content2 {
+			margin-top: 0px;
+			margin-left: 0px;
+			display: block;
+		}
+    } 
+ 	
+ 	
+</style>
+<script>
+	function hide(){
+		if(document.getElementById("descript").className === "show"){
+			document.getElementById("descript").className = "hide";
+			document.getElementById("hs").innerHTML = "Pokaż";
+			document.getElementById("read").style = "margin-top: 10%";
+		}	
+		else{
+			document.getElementById("descript").className = "show";
+			document.getElementById("hs").innerHTML = "Ukryj";
+			document.getElementById("read").style = "margin-top: 0%";
+		}	
+	}
+	function hide1(){
+		if(document.getElementById("drach").className === "booksdescript1"){
+			document.getElementById("drach").className = "hide";
+		}
+		else{
+			document.getElementById("drach").className = "booksdescript1";
+			document.getElementById("krol").className = "hide";
+			document.getElementById("morfina").className = "hide";
+			document.getElementById("sztuka").className = "hide";
+		}
+	}
+	function hide2(){
+		if(document.getElementById("krol").className === "booksdescript2"){
+			document.getElementById("krol").className = "hide";
+		}
+		else{
+			document.getElementById("drach").className = "hide";
+			document.getElementById("krol").className = "booksdescript2";
+			document.getElementById("morfina").className = "hide";
+			document.getElementById("sztuka").className = "hide";
+		}
+	}
+	function hide3(){
+		if(document.getElementById("morfina").className === "booksdescript3"){
+			document.getElementById("morfina").className = "hide";
+		}
+		else{
+			document.getElementById("drach").className = "hide";
+			document.getElementById("krol").className = "hide";
+			document.getElementById("morfina").className = "booksdescript3";
+			document.getElementById("sztuka").className = "hide";
+		}
+	}
+	function hide4(){
+		if(document.getElementById("sztuka").className === "booksdescript4"){
+			document.getElementById("sztuka").className = "hide";
+		}
+		else{
+			document.getElementById("drach").className = "hide";
+			document.getElementById("krol").className = "hide";
+			document.getElementById("morfina").className = "hide";
+			document.getElementById("sztuka").className = "booksdescript4";
+		}
+	}
+	
+</script>
+</head>
+<body style="background-color: #f5f5f0;">
+
+<div class="row">
+     <div class="col-6-12">
+		<div class="header">
+			  <a href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/title-page.html" target="_self">
+				<img class="picture" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/Bez tytułu.png" alt="Avatar">
+			  </a>	
+			<div class="holder">
+				<div>
+					<h1>Piotr Masarczyk</h1>
+					<h3>Moje przygody z edukacją</h3>	
+					<h4>Hobby - Literatura</h4>
+				</div>
+				<div class="navbar">
+					<ul class="a">
+						<li class="dropdown">
+							<a href="javascript:void(0)" class="dropbtn">Edukacja</a>
+							<div class="dropdown-content">
+								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/firstsemester.html">1 semestr PWR</a>
+								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/secondsemester.html">2 semestr PWR</a>
+								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/thirdsemester.html">3 semestr PWR</a>
+								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/fourthsemester.html">4 semestr PWR</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:void(0)" class="dropbtn">Hobby</a>
+							<div class="dropdown-content2">
+								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/traveling.html">Podróżowanie</a>
+								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/gym.html">Zdrowy tryb życia</a>
+							</div>
+						</li>
+						<li><a class="active" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/title-page.html">Strona główna</a></li>
+					</ul>	
+				</div>
+			</div>	
+		</div>
+		<div class="subjectname">
+			<h1 style="text-align: center;"> Moja biblioteka </h1>			
+		</div>
+		<div class="subjectname2">
+			<h4 class="center">Tutaj znajduję się kilka tytułów wraz z autorem, które aktualnie czytam lub które skończyłem czytać.</h4>
+		</div>
+		<div class="subjectname3">
+			<h1 class="center">Obecnie czytam</h1>
+		</div>
+		<div class="currentbook">
+			<img class="bookcover" alt="Okładka książki" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/book/geek.jpg">
+					<h3>Tytuł: Gotowanie dla geeków</h3>
+					<h4>Autor: Jeff Potter</h4>
+					<h5 onclick="hide()">Opis znajdujący się na rewersie książki</h5>
+					<button id="hs" onclick="hide()">Ukryj</button>
+					<p id="descript" class="show">Choć trudno to sobie wyobrazić, w życiu każdego programisty, administratora, webmastera czy hakera przychodzi w końcu taka chwila, kiedy musi wyjść zza ukochanego monitora… i najzwyczajniej w świecie coś zjeść! W końcu informatyk też człowiek i nie tylko głód wiedzy zagląda mu w oczy! Niestety nikt nie wymyślił jeszcze sposobu na to, by ściągnąć z sieci aplikację z technikami kuchennymi i załadować ją bezpośrednio do komórek pamięci. Jeśli więc błąd w programie włącza w Tobie automatyczny mechanizm rozwiązywania pasjonującej zagadki, a w kuchni kończy się poważną awarią skutkującą zamówieniem pizzy - pora spojrzeć na gotowanie jak na nowy, pasjonujący algorytm. Wbrew pozorom tutaj także ciąg jasno zdefiniowanych czynności daje oczekiwany wynik, a nauka gotowania podobnie jak zgłębianie linijek kodu nierozerwalnie łączy się z dociekliwością, zadawaniem pytań i znajdowaniem źródeł informacji. Chyba coś o tym wiesz, prawda?
+
+Trzymasz w rękach coś więcej niż zwykłą książkę kucharską. Oto pierwsza publikacja dla informatyków, która zamiast zagonić Cię do klawiatury, wypędzi Cię zza niej i zainspiruje do smakowitych kulinarnych eksperymentów! Otrzymasz przy tym solidną porcję sycącej umysł i żołądek wiedzy, m.in. na temat niezbędnych w kuchni narzędzi, składników, czasu i temperatury gotowania poszczególnych produktów czy fizjologii smaku i zapachu. Autor i pasjonat sztuki kulinarnej, Jeff Potter, udzieli Ci mnóstwa praktycznych wskazówek i zasypie świetnymi przepisami o różnym stopniu trudności — od tych słodkich i dziecinnie prostych po niezwykle wyrafinowane. Na kartach książki znajdziesz także mnóstwo podsycających Twoją kreatywność wywiadów oraz rozmów z naukowcami, technologami żywienia, mistrzami kulinarnymi i autorami kuchennych blogów. Wszystko po to, aby szybko i przyjemnie przybliżyć Cię do realizacji ambitnego zadania, przygotowania smacznego i zdrowego posiłku!</p>	
+		</div>
+		<div id="read">
+			<div class="subjectname2">
+				<h1 class="center">Przeczytane książki</h1>
+			</div>
+			<div class="books">
+				<img onclick="hide1()" alt="Okładka książki" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/book/drach.jpg">
+				<img onclick="hide2()" alt="Okładka książki" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/book/krol.jpg">
+				<img onclick="hide3()" alt="Okładka książki" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/book/morfina.jpg">
+				<img onclick="hide4()" alt="Okładka książki" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/book/sztuka.jpg">
+			</div>
+			
+		</div>
+		<div id="drach" class="hide">
+				<h3> Tytuł: Drach </h3> 
+				<h4> Autor: Szczepan Twardoch </h4>
+				<h5> Moja ocena: 7/10 </h5>
+				<p class="justify"> Lektura nie jest specjalnie łatwa. Pisarz pokazał nam losy kilku bohaterów, rodziny, rozmieszczone jednak na planie praktycznie stu lat; ogromna większość tego, co poznamy dzieje się między rokiem 1914 a 2014.. Twardoch pisze głównie o tym, że historia i ludzkie życie jest chaosem oraz że wszyscy trafimy ostatecznie do ziemi. Trochę za mało jak na 400 stron, nawet jeśli czytało się je z przyjemnością (pod koniec z mniejszą). </p>
+		</div>
+		<div id="krol" class="hide">
+				<h3> Tytuł: Król </h3> 
+				<h4> Autor: Szczepan Twardoch </h4>
+				<h5> Moja ocena: 8.5/10 </h5>
+				<p class="justify"> W powieści "Król", podobnie jak w "Morfinie", nie ma pozytywnych bohaterów. A jednak, co dziwne i zaskakujące, nie do wszystkich postaci czuje się antypatię. Mało tego, tytułowemu bohaterowi nieraz się kibicuje. Stworzenie takich kreacji na pewno wymaga od autora talentu i pomysłowości - należy się za to duży plus. Książka „Król” Szczepana Twardocha, to opowieść o warszawskim Nalewkach, Woli i eleganckim Śródmieściu. O Żydach i Polakach tuż przed II wojną. Warszawie, gdzie różne religijne i polityczne konflikty coraz bardziej narastały. Gdzie szemrane interesy wspólnie zawierali Polacy z Żydami. Pokazany świat w którym liczy się tylko siła pięści i rewolweru. Liczne zwroty akcji dodają kolorytu tej książce.</p>
+		</div>
+		<div id="morfina" class="hide">
+				<h3> Tytuł: Morfina </h3> 
+				<h4> Autor: Szczepan Twardoch </h4>
+				<h5> Moja ocena: 7.5/10 </h5>
+				<p class="justify"> Moje pierwsze spotkanie z twórczością Szczepana Twardocha oraz pierwsze z dzieł (spośród umieszczonych tutaj), które ów autor napisał. Od początku do końca historię Konstantego Willemanna czytałem z zaciekawieniem. Byłem zaskoczony z jaką łatwością autor posługuje się brutalnością, erotyką i bezpośredniością przy tworzeniu świata przedstawionego w powieści. Po ukończeniu tej pozycji od razu sięgnąłem po kolejne dzieło Szczepana Twardocha, zafascynował mnie jego styl pisania.</p>
+		</div>
+		<div id="sztuka" class="hide">
+				<h3> Tytuł: Sztuka życia dla mężczyzn </h3> 
+				<h4> Autor: Szczepan Twardoch </h4>
+				<h5> Moja ocena: 6/10 </h5>
+				<p class="justify"> Jak wielu Czytelników, zauważyłem, że książka jest nierówna, niektóre fragmenty czyta się z uśmiechem na ustach i zainteresowaniem, inne męczą i zmuszają do sprawdzenia, czy daleko jeszcze do końca rozdziału. Niektóre porady rzeczywiście trafne i gdyby mężczyźni się do nich stosowali, nasze życie mogłoby wyglądać trochę lepiej, a przynajmniej ładniej... Autorzy wychodzą momentami na bufonów i zdają się zapominać, że nie da się całego życia spędzić pod krawatem i z poszetką...</p>
+		</div>
+	</div>	
+</div>
+<footer style="background-color: #000000">
+<h1> kozi to pizda </h1>
+</footer>	
+</body>
+
+</html>
