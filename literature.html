@@ -5,7 +5,8 @@
  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  <meta charset="UTF-8">
- <style>
+ <link rel="stylesheet" type="text/css" href="mystyle.css">
+ <!-- <style>
 
    
    .card {   
@@ -364,7 +365,7 @@
     } 
  	
  	
-</style>
+</style> -->
 <script>
 	function hide(){
 		if(document.getElementById("descript").className === "show"){
@@ -429,7 +430,7 @@
 
 <div class="row">
      <div class="col-6-12">
-		<div class="header">
+		<header class="header">
 			  <a href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/title-page.html" target="_self">
 				<img class="picture" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/Bez tytułu.png" alt="Avatar">
 			  </a>	
@@ -439,29 +440,29 @@
 					<h3>Moje przygody z edukacją</h3>	
 					<h4>Hobby - Literatura</h4>
 				</div>
-				<div class="navbar">
+				<nav class="navbar">
 					<ul class="a">
 						<li class="dropdown">
 							<a href="javascript:void(0)" class="dropbtn">Edukacja</a>
-							<div class="dropdown-content">
+							<nav class="dropdown-content">
 								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/firstsemester.html">1 semestr PWR</a>
 								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/secondsemester.html">2 semestr PWR</a>
 								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/thirdsemester.html">3 semestr PWR</a>
 								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/fourthsemester.html">4 semestr PWR</a>
-							</div>
+							</nav>
 						</li>
 						<li class="dropdown">
 							<a href="javascript:void(0)" class="dropbtn">Hobby</a>
-							<div class="dropdown-content2">
+							<nav class="dropdown-content2">
 								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/traveling.html">Podróżowanie</a>
 								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/gym.html">Zdrowy tryb życia</a>
-							</div>
+							</nav>
 						</li>
 						<li><a class="active" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/title-page.html">Strona główna</a></li>
 					</ul>	
 				</div>
-			</div>	
-		</div>
+			</nav>	
+		</header>
 		<div class="subjectname">
 			<h1 style="text-align: center;"> Moja biblioteka </h1>			
 		</div>
@@ -471,7 +472,7 @@
 		<div class="subjectname3">
 			<h1 class="center">Obecnie czytam</h1>
 		</div>
-		<div class="currentbook">
+		<section class="currentbook">
 			<img class="bookcover" alt="Okładka książki" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/book/geek.jpg">
 					<h3>Tytuł: Gotowanie dla geeków</h3>
 					<h4>Autor: Jeff Potter</h4>
@@ -480,19 +481,19 @@
 					<p id="descript" class="show">Choć trudno to sobie wyobrazić, w życiu każdego programisty, administratora, webmastera czy hakera przychodzi w końcu taka chwila, kiedy musi wyjść zza ukochanego monitora… i najzwyczajniej w świecie coś zjeść! W końcu informatyk też człowiek i nie tylko głód wiedzy zagląda mu w oczy! Niestety nikt nie wymyślił jeszcze sposobu na to, by ściągnąć z sieci aplikację z technikami kuchennymi i załadować ją bezpośrednio do komórek pamięci. Jeśli więc błąd w programie włącza w Tobie automatyczny mechanizm rozwiązywania pasjonującej zagadki, a w kuchni kończy się poważną awarią skutkującą zamówieniem pizzy - pora spojrzeć na gotowanie jak na nowy, pasjonujący algorytm. Wbrew pozorom tutaj także ciąg jasno zdefiniowanych czynności daje oczekiwany wynik, a nauka gotowania podobnie jak zgłębianie linijek kodu nierozerwalnie łączy się z dociekliwością, zadawaniem pytań i znajdowaniem źródeł informacji. Chyba coś o tym wiesz, prawda?
 
 Trzymasz w rękach coś więcej niż zwykłą książkę kucharską. Oto pierwsza publikacja dla informatyków, która zamiast zagonić Cię do klawiatury, wypędzi Cię zza niej i zainspiruje do smakowitych kulinarnych eksperymentów! Otrzymasz przy tym solidną porcję sycącej umysł i żołądek wiedzy, m.in. na temat niezbędnych w kuchni narzędzi, składników, czasu i temperatury gotowania poszczególnych produktów czy fizjologii smaku i zapachu. Autor i pasjonat sztuki kulinarnej, Jeff Potter, udzieli Ci mnóstwa praktycznych wskazówek i zasypie świetnymi przepisami o różnym stopniu trudności — od tych słodkich i dziecinnie prostych po niezwykle wyrafinowane. Na kartach książki znajdziesz także mnóstwo podsycających Twoją kreatywność wywiadów oraz rozmów z naukowcami, technologami żywienia, mistrzami kulinarnymi i autorami kuchennych blogów. Wszystko po to, aby szybko i przyjemnie przybliżyć Cię do realizacji ambitnego zadania, przygotowania smacznego i zdrowego posiłku!</p>	
-		</div>
-		<div id="read">
+		</section>
+		<section id="read">
 			<div class="subjectname2">
 				<h1 class="center">Przeczytane książki</h1>
 			</div>
-			<div class="books">
+			<nav class="books">
 				<img onclick="hide1()" alt="Okładka książki" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/book/drach.jpg">
 				<img onclick="hide2()" alt="Okładka książki" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/book/krol.jpg">
 				<img onclick="hide3()" alt="Okładka książki" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/book/morfina.jpg">
 				<img onclick="hide4()" alt="Okładka książki" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/book/sztuka.jpg">
-			</div>
+			</nav>
 			
-		</div>
+		</section>
 		<div id="drach" class="hide">
 				<h3> Tytuł: Drach </h3> 
 				<h4> Autor: Szczepan Twardoch </h4>
@@ -519,9 +520,6 @@ Trzymasz w rękach coś więcej niż zwykłą książkę kucharską. Oto pierwsz
 		</div>
 	</div>	
 </div>
-<footer style="background-color: #000000">
-<h1> kozi to pizda </h1>
-</footer>	
 </body>
 
 </html>

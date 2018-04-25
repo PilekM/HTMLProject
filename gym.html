@@ -5,7 +5,8 @@
  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  <meta charset="UTF-8">
- <style>
+ <link rel="stylesheet" type="text/css" href="mystyle.css">
+ <!-- <style>
 
    
    .card {   
@@ -274,7 +275,7 @@
     } 
  	
  	
-</style>
+</style> -->
 <script>
 function hide1(){
 		if(document.getElementById("run").className === "descript1"){
@@ -312,7 +313,7 @@ function hide1(){
 
 <div class="row">
      <div class="col-6-12">
-		<div class="header">
+		<header class="header">
 			  <a href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/title-page.html" target="_self">
 				<img class="picture" src="file:///C:/Users/Piotrek/Desktop/Projekt HTML/Bez tytułu.png" alt="Avatar">
 			  </a>	
@@ -322,49 +323,47 @@ function hide1(){
 					<h3>Moje przygody z edukacją</h3>	
 					<h4>Hobby - Zdrowy tryb życia</h4>
 				</div>
-				<div class="navbar">
+				<nav class="navbar">
 					<ul class="a">
 						<li class="dropdown">
 							<a href="javascript:void(0)" class="dropbtn">Edukacja</a>
-							<div class="dropdown-content">
+							<nav class="dropdown-content">
 								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/firstsemester.html">1 semestr PWR</a>
 								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/secondsemester.html">2 semestr PWR</a>
 								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/thirdsemester.html">3 semestr PWR</a>
 								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/fourthsemester.html">4 semestr PWR</a>
-							</div>
+							</nav>
 						</li>
 						<li class="dropdown">
 							<a href="javascript:void(0)" class="dropbtn">Hobby</a>
-							<div class="dropdown-content2">
+							<nav class="dropdown-content2">
 								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/traveling.html">Podróżowanie</a>
 								<a class="dropdown-contents" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/literature.html">Literatura</a>
-							</div>
+							</nav>
 						</li>
 						<li><a class="active" href="file:///C:/Users/Piotrek/Desktop/Projekt HTML/title-page.html">Strona główna</a></li>
 					</ul>	
-				</div>
+				</nav>
 			</div>	
-		</div>
+		</header>
 		<div class="aboutpage">
 			<h3> Sport i zdrowy tryb życia odgrywają bardzo dużą rolę w moim życiu. Największe znaczenie z nich mają jednak 3 rzeczy. </h3>
 		</div>	
-			<div class="flexcontainer">
+			<section class="flexcontainer">
 				<ul class="menu-v">
 					<li class="ab1" onclick="hide1()">Bieganie</li>
 					<li class="ab2" onclick="hide2()">Siłownia</li>
 					<li class="ab3" onclick="hide3()">Zdrowe odżywianie</li>
 				</ul>
-
-			<div id="run" class="descript1">
-				<p> Bieganiem zainteresowałem się już w młodym wieku. Ciekawość do tego sportu zakrzewił we mnie mój najstarszy kuzyn, który uczęszcza na liczne biegi przełajowe, maratony i thriatlony. Podejście do uprawiania tego sportu mamy jednak różne. Moje jest mniej kompetetywne. Dla mnie jest to chwila oderwania od myślenia. Relaks poprzez nieduży wysiłek. Uwielbiam ten czas gdy jestem tylko ja, muzyka z słuchawek w uszach i trasa przede mną.</p>
-			</div>
-			<div id="gym" class="hide">
-				<p> Siłownię poznałem dzięki znajomym, z którymi zapisałem się na zajęcia z Muay Thai. Tam po treningach zaczęliśmy ćwiczyć z małymi ciężarami. Szybko upodobałem sobie taki sposób spędzania czasu wolnego. Jest to dla mnie poniekąd praca nad sobą oraz walka z własnymi słabościami. Czasem ciężko jest utrzymać regularność treningów próbując łączyć je z studiami, ale kto powiedział, że musi być łatwo..</p>
-			</div>
-			<div id="nutrit" class="hide">
-				<p> Udając się na studia z dala od rodzinnego domu byłem przygotowany na sytuację, w której sam sobie zostanę kucharzem, garnkiem i patelnią. Mniej-więcej w tym samym czasie, w którym zainteresowałem się ćwiczeniem na siłowni, zacząłem czytać o zdrowym odżywianiu, tabelach kalorii i okrutnych tłuszczach trans. Prawdę mówiąc głównie staram się nie nadużywać słodyczy oraz cukru, wciągu dnia zjadać zbilansowane kalorycznie posiłki i trzymać się wyznaczonych dla siebie ilości kalorii do spożycia dziennie. Nie można popadać w skrajności.</p>
-			</div>
-			</div>
-		
+				<article id="run" class="descript1">
+					<p> Bieganiem zainteresowałem się już w młodym wieku. Ciekawość do tego sportu zakrzewił we mnie mój najstarszy kuzyn, który uczęszcza na liczne biegi przełajowe, maratony i thriatlony. Podejście do uprawiania tego sportu mamy jednak różne. Moje jest mniej kompetetywne. Dla mnie jest to chwila oderwania od myślenia. Relaks poprzez nieduży wysiłek. Uwielbiam ten czas gdy jestem tylko ja, muzyka z słuchawek w uszach i trasa przede mną.</p>
+				</article>
+				<article id="gym" class="hide">
+					<p> Siłownię poznałem dzięki znajomym, z którymi zapisałem się na zajęcia z Muay Thai. Tam po treningach zaczęliśmy ćwiczyć z małymi ciężarami. Szybko upodobałem sobie taki sposób spędzania czasu wolnego. Jest to dla mnie poniekąd praca nad sobą oraz walka z własnymi słabościami. Czasem ciężko jest utrzymać regularność treningów próbując łączyć je z studiami, ale kto powiedział, że musi być łatwo..</p>
+				</article>
+				<article id="nutrit" class="hide">
+					<p> Udając się na studia z dala od rodzinnego domu byłem przygotowany na sytuację, w której sam sobie zostanę kucharzem, garnkiem i patelnią. Mniej-więcej w tym samym czasie, w którym zainteresowałem się ćwiczeniem na siłowni, zacząłem czytać o zdrowym odżywianiu, tabelach kalorii i okrutnych tłuszczach trans. Prawdę mówiąc głównie staram się nie nadużywać słodyczy oraz cukru, wciągu dnia zjadać zbilansowane kalorycznie posiłki i trzymać się wyznaczonych dla siebie ilości kalorii do spożycia dziennie. Nie można popadać w skrajności.</p>
+				</article>
+			</section>
 	</div>	
 </div>	
